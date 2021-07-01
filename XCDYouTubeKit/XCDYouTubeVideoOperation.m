@@ -439,7 +439,7 @@ static NSError *YouTubeError(NSError *error, NSSet *regionsAllowed, NSString *la
 	
 	self.isExecuting = YES;
 	
-	self.eventLabels = [[NSMutableArray alloc] initWithArray:@[ @"embedded", @"detailpage" ]];
+	self.eventLabels = [[NSMutableArray alloc] init];
 	[self startNextRequest];
 }
 
